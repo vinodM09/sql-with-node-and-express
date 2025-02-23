@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgb(66, 66, 66);
+        }
+        input{
+            width: 15rem;
+            height: 2rem;
+        }
+        button{
+            width: 15.5rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter your details</h1>
+    <form method="post" action="/join/<%= id %>">
+        <input type="text" name="username" placeholder="username"> <br> <br>
+        <input type="text" name="email" id="email_id" placeholder="email"> <br>
+        <label for="pass_id">create a password</label> <br>
+        <input type="password" name="password" id="pass_id" placeholder="password"> <br> <br>
+        <!-- <label for="re_pass_id">re-enter the password</label> <br>
+        <input type="password" name="password" id="re_pass_id" placeholder="re-enter-password"> <br> <br> -->
+        <button>Create Account</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User</title>
+</head>
+<body>
+    <h1>Erase yourself from our database</h1>
+    <h3>Account Info</h3>
+    <p>Email: <%= user.email %> </p>
+    <p>Name: <%= user.username %></p>
+    <p>Password is required to delete a account</p>
+    <form method="post" action="/user/<%= user.id %>/delete">
+        <label for="pass_id">Password</label> <br>
+        <input type="password" name="password" id="pass_id" placeholder="password"> <br> <br>
+        <label for="c_pass_id">Confirm Password</label> <br>
+        <input type="password" name="c_password" id="c_pass_id" placeholder="re-enter password"> <br> <br>
+        <button>Delete Account</button>
+    </form>
+</body>
+</html>

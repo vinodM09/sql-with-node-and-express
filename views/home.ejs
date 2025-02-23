@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(66, 66, 66);
+            flex-direction: column;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        #count_id{
+            font-size: 6rem;
+        }
+        button{
+            width: 5rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <p id="count_id"><%= count %></p>
+    <h2>this number will increase when you join this website</h2> <br>
+    <label for="button">see the magic yourself by clicking the join button</label> <br>
+    <form method="get" action="/join">
+        <button>Join Now</button>
+    </form> <br>
+    <a href="/user">SEE RECENTLY JOINED USERS WHO HAVE HELPED THIS NUMBER REACH HERE</a>
+</body>
+</html>
